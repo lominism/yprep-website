@@ -1,12 +1,27 @@
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { BookOpen, CheckCircle, GraduationCap, BarChart, Globe, Users, Clock } from "lucide-react"
-import TestimonialsCarousel from "@/components/testimonials-carousel"
-import PricingTable from "@/components/pricing-table"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  BookOpen,
+  CheckCircle,
+  GraduationCap,
+  BarChart,
+  Globe,
+  Users,
+  Clock,
+} from "lucide-react";
+import TestimonialsCarousel from "@/components/testimonials-carousel";
+import PricingTable from "@/components/pricing-table";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -23,12 +38,16 @@ export default function Home() {
                     Ace Your Standardized Tests with Confidence
                   </h1>
                   <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                    Expert-designed prep courses for SAT, ACT, GMAT, TOEFL, and IELTS. Personalized learning paths to
-                    help you achieve your highest score.
+                    Expert-designed prep courses for SAT, ACT, GMAT, TOEFL, and
+                    IELTS. Personalized learning paths to help you achieve your
+                    highest score.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button size="lg" className="bg-orange-400 hover:bg-orange-500">
+                  <Button
+                    size="lg"
+                    className="bg-orange-400 hover:bg-orange-500"
+                  >
                     Start Free Trial
                   </Button>
                   <Button variant="outline" size="lg">
@@ -48,7 +67,7 @@ export default function Home() {
               </div>
               <div className="flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/girl-studying.png"
                   alt="Students studying"
                   width={500}
                   height={500}
@@ -66,19 +85,27 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-8">
               <div className="flex flex-col items-center justify-center space-y-2 text-center">
                 <div className="text-3xl font-bold sm:text-4xl">98%</div>
-                <div className="text-sm font-medium text-gray-500 dark:text-gray-400">Score Improvement</div>
+                <div className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                  Score Improvement
+                </div>
               </div>
               <div className="flex flex-col items-center justify-center space-y-2 text-center">
                 <div className="text-3xl font-bold sm:text-4xl">50K+</div>
-                <div className="text-sm font-medium text-gray-500 dark:text-gray-400">Students Helped</div>
+                <div className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                  Students Helped
+                </div>
               </div>
               <div className="flex flex-col items-center justify-center space-y-2 text-center">
                 <div className="text-3xl font-bold sm:text-4xl">5</div>
-                <div className="text-sm font-medium text-gray-500 dark:text-gray-400">Test Types</div>
+                <div className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                  Test Types
+                </div>
               </div>
               <div className="flex flex-col items-center justify-center space-y-2 text-center">
                 <div className="text-3xl font-bold sm:text-4xl">24/7</div>
-                <div className="text-sm font-medium text-gray-500 dark:text-gray-400">Support</div>
+                <div className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                  Support
+                </div>
               </div>
             </div>
           </div>
@@ -89,9 +116,12 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Comprehensive Test Preparation</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Comprehensive Test Preparation
+                </h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Choose from our expert-designed courses for all major standardized tests
+                  Choose from our expert-designed courses for all major
+                  standardized tests
                 </p>
               </div>
             </div>
@@ -108,12 +138,17 @@ export default function Home() {
                   <Card>
                     <CardHeader>
                       <CardTitle>SAT Preparation</CardTitle>
-                      <CardDescription>Comprehensive preparation for the Scholastic Assessment Test</CardDescription>
+                      <CardDescription>
+                        Comprehensive preparation for the Scholastic Assessment
+                        Test
+                      </CardDescription>
                     </CardHeader>
                     <CardContent>
                       <div className="grid gap-4 md:grid-cols-2">
                         <div>
-                          <h3 className="text-lg font-medium">What You'll Learn</h3>
+                          <h3 className="text-lg font-medium">
+                            What You'll Learn
+                          </h3>
                           <ul className="mt-2 space-y-2">
                             <li className="flex items-center">
                               <CheckCircle className="mr-2 h-4 w-4 text-orange-500" />
@@ -134,7 +169,9 @@ export default function Home() {
                           </ul>
                         </div>
                         <div>
-                          <h3 className="text-lg font-medium">Course Features</h3>
+                          <h3 className="text-lg font-medium">
+                            Course Features
+                          </h3>
                           <ul className="mt-2 space-y-2">
                             <li className="flex items-center">
                               <CheckCircle className="mr-2 h-4 w-4 text-orange-500" />
@@ -157,7 +194,9 @@ export default function Home() {
                       </div>
                     </CardContent>
                     <CardFooter>
-                      <Button className="w-full bg-orange-400 hover:bg-orange-500">Explore SAT Prep</Button>
+                      <Button className="w-full bg-orange-400 hover:bg-orange-500">
+                        Explore SAT Prep
+                      </Button>
                     </CardFooter>
                   </Card>
                 </TabsContent>
@@ -165,12 +204,17 @@ export default function Home() {
                   <Card>
                     <CardHeader>
                       <CardTitle>ACT Preparation</CardTitle>
-                      <CardDescription>Complete preparation for the American College Testing exam</CardDescription>
+                      <CardDescription>
+                        Complete preparation for the American College Testing
+                        exam
+                      </CardDescription>
                     </CardHeader>
                     <CardContent>
                       <div className="grid gap-4 md:grid-cols-2">
                         <div>
-                          <h3 className="text-lg font-medium">What You'll Learn</h3>
+                          <h3 className="text-lg font-medium">
+                            What You'll Learn
+                          </h3>
                           <ul className="mt-2 space-y-2">
                             <li className="flex items-center">
                               <CheckCircle className="mr-2 h-4 w-4 text-orange-500" />
@@ -191,7 +235,9 @@ export default function Home() {
                           </ul>
                         </div>
                         <div>
-                          <h3 className="text-lg font-medium">Course Features</h3>
+                          <h3 className="text-lg font-medium">
+                            Course Features
+                          </h3>
                           <ul className="mt-2 space-y-2">
                             <li className="flex items-center">
                               <CheckCircle className="mr-2 h-4 w-4 text-orange-500" />
@@ -214,7 +260,9 @@ export default function Home() {
                       </div>
                     </CardContent>
                     <CardFooter>
-                      <Button className="w-full bg-orange-400 hover:bg-orange-500">Explore ACT Prep</Button>
+                      <Button className="w-full bg-orange-400 hover:bg-orange-500">
+                        Explore ACT Prep
+                      </Button>
                     </CardFooter>
                   </Card>
                 </TabsContent>
@@ -222,12 +270,17 @@ export default function Home() {
                   <Card>
                     <CardHeader>
                       <CardTitle>GMAT Preparation</CardTitle>
-                      <CardDescription>Advanced preparation for the Graduate Management Admission Test</CardDescription>
+                      <CardDescription>
+                        Advanced preparation for the Graduate Management
+                        Admission Test
+                      </CardDescription>
                     </CardHeader>
                     <CardContent>
                       <div className="grid gap-4 md:grid-cols-2">
                         <div>
-                          <h3 className="text-lg font-medium">What You'll Learn</h3>
+                          <h3 className="text-lg font-medium">
+                            What You'll Learn
+                          </h3>
                           <ul className="mt-2 space-y-2">
                             <li className="flex items-center">
                               <CheckCircle className="mr-2 h-4 w-4 text-orange-500" />
@@ -248,7 +301,9 @@ export default function Home() {
                           </ul>
                         </div>
                         <div>
-                          <h3 className="text-lg font-medium">Course Features</h3>
+                          <h3 className="text-lg font-medium">
+                            Course Features
+                          </h3>
                           <ul className="mt-2 space-y-2">
                             <li className="flex items-center">
                               <CheckCircle className="mr-2 h-4 w-4 text-orange-500" />
@@ -271,7 +326,9 @@ export default function Home() {
                       </div>
                     </CardContent>
                     <CardFooter>
-                      <Button className="w-full bg-orange-400 hover:bg-orange-500">Explore GMAT Prep</Button>
+                      <Button className="w-full bg-orange-400 hover:bg-orange-500">
+                        Explore GMAT Prep
+                      </Button>
                     </CardFooter>
                   </Card>
                 </TabsContent>
@@ -280,13 +337,16 @@ export default function Home() {
                     <CardHeader>
                       <CardTitle>TOEFL Preparation</CardTitle>
                       <CardDescription>
-                        Specialized preparation for the Test of English as a Foreign Language
+                        Specialized preparation for the Test of English as a
+                        Foreign Language
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
                       <div className="grid gap-4 md:grid-cols-2">
                         <div>
-                          <h3 className="text-lg font-medium">What You'll Learn</h3>
+                          <h3 className="text-lg font-medium">
+                            What You'll Learn
+                          </h3>
                           <ul className="mt-2 space-y-2">
                             <li className="flex items-center">
                               <CheckCircle className="mr-2 h-4 w-4 text-orange-500" />
@@ -307,7 +367,9 @@ export default function Home() {
                           </ul>
                         </div>
                         <div>
-                          <h3 className="text-lg font-medium">Course Features</h3>
+                          <h3 className="text-lg font-medium">
+                            Course Features
+                          </h3>
                           <ul className="mt-2 space-y-2">
                             <li className="flex items-center">
                               <CheckCircle className="mr-2 h-4 w-4 text-orange-500" />
@@ -330,7 +392,9 @@ export default function Home() {
                       </div>
                     </CardContent>
                     <CardFooter>
-                      <Button className="w-full bg-orange-400 hover:bg-orange-500">Explore TOEFL Prep</Button>
+                      <Button className="w-full bg-orange-400 hover:bg-orange-500">
+                        Explore TOEFL Prep
+                      </Button>
                     </CardFooter>
                   </Card>
                 </TabsContent>
@@ -339,13 +403,16 @@ export default function Home() {
                     <CardHeader>
                       <CardTitle>IELTS Preparation</CardTitle>
                       <CardDescription>
-                        Complete preparation for the International English Language Testing System
+                        Complete preparation for the International English
+                        Language Testing System
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
                       <div className="grid gap-4 md:grid-cols-2">
                         <div>
-                          <h3 className="text-lg font-medium">What You'll Learn</h3>
+                          <h3 className="text-lg font-medium">
+                            What You'll Learn
+                          </h3>
                           <ul className="mt-2 space-y-2">
                             <li className="flex items-center">
                               <CheckCircle className="mr-2 h-4 w-4 text-orange-500" />
@@ -366,7 +433,9 @@ export default function Home() {
                           </ul>
                         </div>
                         <div>
-                          <h3 className="text-lg font-medium">Course Features</h3>
+                          <h3 className="text-lg font-medium">
+                            Course Features
+                          </h3>
                           <ul className="mt-2 space-y-2">
                             <li className="flex items-center">
                               <CheckCircle className="mr-2 h-4 w-4 text-orange-500" />
@@ -389,7 +458,9 @@ export default function Home() {
                       </div>
                     </CardContent>
                     <CardFooter>
-                      <Button className="w-full bg-orange-400 hover:bg-orange-500">Explore IELTS Prep</Button>
+                      <Button className="w-full bg-orange-400 hover:bg-orange-500">
+                        Explore IELTS Prep
+                      </Button>
                     </CardFooter>
                   </Card>
                 </TabsContent>
@@ -403,9 +474,12 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Why Choose Our Test Prep</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Why Choose Our Test Prep
+                </h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Our comprehensive approach helps you achieve your highest possible score
+                  Our comprehensive approach helps you achieve your highest
+                  possible score
                 </p>
               </div>
             </div>
@@ -417,7 +491,8 @@ export default function Home() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold">Comprehensive Materials</h3>
                   <p className="text-gray-500 dark:text-gray-400">
-                    Access thousands of practice questions, full-length tests, and detailed explanations.
+                    Access thousands of practice questions, full-length tests,
+                    and detailed explanations.
                   </p>
                 </div>
               </div>
@@ -428,7 +503,8 @@ export default function Home() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold">Expert Instructors</h3>
                   <p className="text-gray-500 dark:text-gray-400">
-                    Learn from instructors who scored in the top percentiles and have years of teaching experience.
+                    Learn from instructors who scored in the top percentiles and
+                    have years of teaching experience.
                   </p>
                 </div>
               </div>
@@ -439,7 +515,8 @@ export default function Home() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold">Performance Analytics</h3>
                   <p className="text-gray-500 dark:text-gray-400">
-                    Track your progress with detailed analytics and personalized recommendations.
+                    Track your progress with detailed analytics and personalized
+                    recommendations.
                   </p>
                 </div>
               </div>
@@ -450,7 +527,8 @@ export default function Home() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold">Accessible Anywhere</h3>
                   <p className="text-gray-500 dark:text-gray-400">
-                    Study on any device, anytime, with our mobile-friendly platform and offline access.
+                    Study on any device, anytime, with our mobile-friendly
+                    platform and offline access.
                   </p>
                 </div>
               </div>
@@ -461,7 +539,8 @@ export default function Home() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold">Community Support</h3>
                   <p className="text-gray-500 dark:text-gray-400">
-                    Join study groups, forums, and live Q&A sessions with other test-takers.
+                    Join study groups, forums, and live Q&A sessions with other
+                    test-takers.
                   </p>
                 </div>
               </div>
@@ -472,7 +551,8 @@ export default function Home() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold">Flexible Scheduling</h3>
                   <p className="text-gray-500 dark:text-gray-400">
-                    Create a personalized study plan that fits your timeline and learning style.
+                    Create a personalized study plan that fits your timeline and
+                    learning style.
                   </p>
                 </div>
               </div>
@@ -485,9 +565,12 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Success Stories</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Success Stories
+                </h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Hear from students who achieved their target scores with our test prep
+                  Hear from students who achieved their target scores with our
+                  test prep
                 </p>
               </div>
             </div>
@@ -502,7 +585,9 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Simple, Transparent Pricing</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Simple, Transparent Pricing
+                </h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                   Choose the plan that fits your needs and budget
                 </p>
@@ -542,5 +627,5 @@ export default function Home() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }

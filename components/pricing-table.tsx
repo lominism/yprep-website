@@ -1,12 +1,19 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle } from "lucide-react"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { CheckCircle } from "lucide-react";
 
 export default function PricingTable() {
-  const [isAnnual, setIsAnnual] = useState(true)
+  const [isAnnual, setIsAnnual] = useState(true);
 
   const plans = [
     {
@@ -55,7 +62,7 @@ export default function PricingTable() {
       ],
       popular: false,
     },
-  ]
+  ];
 
   return (
     <div className="space-y-8">
@@ -82,7 +89,12 @@ export default function PricingTable() {
 
       <div className="grid gap-6 md:grid-cols-3">
         {plans.map((plan) => (
-          <Card key={plan.name} className={`flex flex-col ${plan.popular ? "border-orange-500 shadow-lg" : ""}`}>
+          <Card
+            key={plan.name}
+            className={`relative flex flex-col ${
+              plan.popular ? "border-orange-500 shadow-lg" : ""
+            }`}
+          >
             {plan.popular && (
               <div className="absolute top-0 right-0 transform translate-x-2 -translate-y-2">
                 <span className="inline-block bg-orange-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
@@ -96,7 +108,9 @@ export default function PricingTable() {
             </CardHeader>
             <CardContent className="flex-1">
               <div className="mb-6">
-                <span className="text-4xl font-bold">${isAnnual ? plan.priceAnnual : plan.priceMonthly}</span>
+                <span className="text-4xl font-bold">
+                  ${isAnnual ? plan.priceAnnual : plan.priceMonthly}
+                </span>
                 <span className="text-muted-foreground">/month</span>
                 {isAnnual && (
                   <div className="text-sm text-muted-foreground mt-1">
@@ -114,7 +128,11 @@ export default function PricingTable() {
               </ul>
             </CardContent>
             <CardFooter>
-              <Button className={`w-full ${plan.popular ? "bg-orange-400 hover:bg-orange-500" : ""}`}>
+              <Button
+                className={`w-full ${
+                  plan.popular ? "bg-orange-400 hover:bg-orange-500" : ""
+                }`}
+              >
                 Get Started
               </Button>
             </CardFooter>
@@ -125,5 +143,5 @@ export default function PricingTable() {
         All plans include a 7-day free trial. No credit card required.
       </div>
     </div>
-  )
+  );
 }

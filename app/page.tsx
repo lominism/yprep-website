@@ -29,7 +29,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full pt-4 pb-12 md:pt-8 md:pb-24 lg:pt-12 lg:pb-32 bg-gradient-to-b from-orange-50 to-white">
+        <section className="w-full py-4 md:py-8 lg:py-12 bg-gradient-to-b from-orange-50 to-white">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_500px]">
               <div className="flex flex-col justify-center space-y-4">
@@ -112,7 +112,7 @@ export default function Home() {
         </section>
 
         {/* Test Types Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32">
+        <section className="w-full py-6 md:py-12 lg:py-24">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -127,12 +127,22 @@ export default function Home() {
             </div>
             <div className="mx-auto mt-12">
               <Tabs defaultValue="sat" className="w-full">
-                <TabsList className="grid w-full grid-cols-2 md:grid-cols-5">
-                  <TabsTrigger value="sat">SAT</TabsTrigger>
-                  <TabsTrigger value="act">ACT</TabsTrigger>
-                  <TabsTrigger value="gmat">GMAT</TabsTrigger>
-                  <TabsTrigger value="toefl">TOEFL</TabsTrigger>
-                  <TabsTrigger value="ielts">IELTS</TabsTrigger>
+                <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 mb-16 md:mb-0">
+                  <TabsTrigger value="sat" className="bg-muted">
+                    SAT
+                  </TabsTrigger>
+                  <TabsTrigger value="act" className="bg-muted">
+                    ACT
+                  </TabsTrigger>
+                  <TabsTrigger value="gmat" className="bg-muted">
+                    GMAT
+                  </TabsTrigger>
+                  <TabsTrigger value="toefl" className="bg-muted">
+                    TOEFL
+                  </TabsTrigger>
+                  <TabsTrigger value="ielts" className="bg-muted">
+                    IELTS
+                  </TabsTrigger>
                 </TabsList>
                 <TabsContent value="sat" className="mt-6">
                   <Card>
@@ -470,7 +480,7 @@ export default function Home() {
         </section>
 
         {/* Features Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+        <section className="w-full py-6 md:py-12 lg:py-24 bg-gray-50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -561,7 +571,7 @@ export default function Home() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32">
+        <section className="w-full py-6 md:py-12 lg:py-24">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -581,7 +591,7 @@ export default function Home() {
         </section>
 
         {/* Pricing Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+        <section className="w-full py-6 md:py-12 lg:py-24 bg-gray-50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">

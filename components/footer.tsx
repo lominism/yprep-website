@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { GraduationCap } from "lucide-react"
+import Link from "next/link";
+import { GraduationCap } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -10,11 +10,11 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               <GraduationCap className="h-6 w-6 text-orange-500" />
               <Link href="/" className="text-xl font-bold">
-                TestPrep Pro
+                YPrep Acacdemy
               </Link>
             </div>
             <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-              Helping students achieve their highest scores on standardized tests since 2010.
+              Bangkok's top boutique test prep center since 2013.
             </p>
             <div className="mt-4 flex space-x-4">
               <Link
@@ -239,9 +239,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-10 border-t pt-6 text-center text-sm text-gray-500 dark:text-gray-400">
-          &copy; {new Date().getFullYear()} TestPrep Pro. All rights reserved.
+          &copy; {new Date().getFullYear()} YPrep Academy. All rights reserved.
         </div>
       </div>
     </footer>
-  )
+  );
 }
